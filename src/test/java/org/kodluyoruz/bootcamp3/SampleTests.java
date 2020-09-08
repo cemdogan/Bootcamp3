@@ -1,9 +1,10 @@
 package org.kodluyoruz.bootcamp3;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SampleTests {
 
@@ -11,10 +12,11 @@ public class SampleTests {
     public void sayHello_WhenCall_ShouldReturnHelloWorldString() {
         //Arrange
         Sample sample = new Sample();
+        String str = "kodluyoruz";
         //Act
-        String result = sample.sayHello("kodluyoruz");
+        String result = sample.sayHello(str);
         //Assert
-        Assert.assertEquals(result, "Hello kodluyoruz");
-        assertThat(result).isEqualTo("Hello kodluyoruz");
+        assertEquals(result, "Merhaba " + str);
+        assertThat(result).isEqualTo("Merhaba "+ str);
     }
 }
