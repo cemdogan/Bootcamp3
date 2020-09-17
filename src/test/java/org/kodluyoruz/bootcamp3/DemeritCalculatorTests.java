@@ -73,10 +73,4 @@ public class DemeritCalculatorTests {
         //Assert
         Assertions.assertEquals(points, expectedResult);
     }
-
-    @Test
-    public void failing_test(){
-        assertTrue(true);
-    }
-
 }
