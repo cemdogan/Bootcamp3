@@ -27,18 +27,6 @@ public class ArrayList2Tests {
     }
 
     @Test
-    public void add_trueStory_2(){
-        //Arrange
-        ArrayList sut = new ArrayList();
-        String newElement = "yavuz";
-
-        sut.add(newElement);
-
-        //Assert
-        assertThat(sut).hasSize(1);
-    }
-
-    @Test
     public void add_trueStory() {
         //Arrange
         int beforeSize = sut.size();
