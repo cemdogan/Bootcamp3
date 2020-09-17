@@ -2,4 +2,4 @@
 
 Seçili (@Tag ile işaretlenmiş) test'leri çalıştırmak için
 
-> mvn test -Dgroups=DemeritCalculator
+> mvn test -Dgroups=important
